@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+
+  <title>Refund</title>
+</head>
+
+<body>
+  <main>
+    <img src="./img/logo.svg" alt="Refund logo" class="logo">
+
+    <section>
+      <form>
+        <h1>solicitaçao de reembloso</h1>
+        <p>
+          informe os dados da despesa para solicitar reembloso. A despesa sera 
+          analisada de reemblosoda em ate 30 Dias 
+        </p>
+
+        <fieldset>
+          <legend>NOma da despesa</legend>
+          <input type="text" id="expense" required>
+        </fieldset>
+
+       <div class="inputs-row">
+         <fieldset>
+          <legend>categoria</legend>
+          <select name="category" id="category" required></select>
+          <option value="" disabled selected hidden>selecione</option>
+          <option value="food">alimentaçao</option>
+          <option value="accommodation">Hospedagem</option>
+          <option value="services">servicos</option>
+          <option value="transport">Transporte</option>
+          <option value="others">uotros</option>
+         </fieldset>
+
+         <fieldset>
+          <legend>Valor da despesa</legend>
+          <input 
+          type="text"
+          name="amout"
+          id="amout"
+          placeholder="R$0,00"
+          required>
+         </fieldset>
+       </div>
+        <button type="submit">adicionar despesa</button>
+      </form>
+
+      <aside>
+        <header>
+          <p>
+            Minahs solicitaçoes <i>&bullet;</i>
+            <span>0 despesa</span>
+          </p>
+          <h2>
+            <small>R$</small>0,00
+          </h2>
+        </header>
+
+        <ul>
+          <li class="expense">
+            <img src="./img/food.svg" alt=" Icone de tipo da despesa">
+
+            <div>
+              <strong>Almoço</strong>
+              <strong>Alimentaçao</strong>
+            </div>
+
+            <span class="expense-amount">
+              <small>R$</small>1.420.57
+            </span>
+
+            <img src="./img/remove.svg" alt="Iconeremove">
+          </li>
+        </ul>
+      </aside>
+    </section>
+  </main>
+
+</body>
+
+</html>
